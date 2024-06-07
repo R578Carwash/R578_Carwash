@@ -1,15 +1,49 @@
 header {
     background-color: white;
-    height: 70px;
+    height: 60px;
     width: 100%;
     border-bottom: 1px solid #CCCCCC;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    box-shadow: 4px 4px 0px 0px #0a24ea3a;
+    align-items: center;
+    
 }
 
 header .logo {
     width: 142px;
     height: 60px;
-    background: url("../images/logo.png") no-repeat center;
+    background: url("") no-repeat center;
     padding-left: 20px;
+    margin-top: 0%;
+    margin-left: 5px;
+
 }
+
+header .logo span {
+    color: #fdc435;
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1.5%;
+    
+}
+
+header  nav ul li a {
+    text-decoration: none;
+    color: rgb(23, 22, 22);
+    font-weight: bold;
+    margin-left: 60px;
+    transition: 0.7s ease-in-out;
+}
+
+header ul li a:hover {
+    color: #000000;
+}
+
