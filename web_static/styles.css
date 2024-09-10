@@ -454,3 +454,173 @@ button.cta-button:hover {
 .city {
     display: none
 }
+
+/* Add your custom styles here */
+
+/* Adjust margins and spacing for smaller devices */
+@media (max-width: 768px) {
+    .logo img {
+        margin-left: -50%;
+        margin-top: 0%;
+    }
+
+    .dropdown-menu li {
+        margin-left: -15%;
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .w3-col.s4 img {
+        height: 200px;
+    }
+
+    .w3-modal-content {
+        margin-top: -10%;
+    }
+
+    .w3-modal-content img.mySlides {
+        height: 200px;
+    }
+
+    .w3-modal-content .w3-row.w3-black.w3-center {
+        margin-top: -10%;
+    }
+
+    .w3-modal-content .w3-row.w3-black.w3-center .w3-col.s4 img.demo {
+        height: 50px;
+    }
+
+    .w3-modal-content .w3-row.w3-black.w3-center .w3-col.s4 img.demo:nth-child(4) {
+        margin-top: 10px;
+    }
+
+    .w3-modal-content .w3-row.w3-black.w3-center .w3-col.s4 img.demo:nth-child(7) {
+        margin-top: 10px;
+    }
+
+    .w3-modal-content .w3-row.w3-black.w3-center .w3-col.s4 img.demo:nth-child(10) {
+        margin-top: 10px;
+    }
+
+    .w3-modal-content .w3-row.w3-black.w3-center .w3-col.s4 img.demo:nth-child(12) {
+        margin-top: 10px;
+    }
+
+    .w3-modal-content .w3-row.w3-black.w3-center .w3-display-container {
+        margin-top: -10px;
+    }
+
+    .w3-modal-content .w3-row.w3-black.w3-center .w3-display-container span.w3-display-left.w3-btn,
+    .w3-modal-content .w3-row.w3-black.w3-center .w3-display-container span.w3-display-right.w3-btn {
+        font-size: 20px;
+    }
+
+    .w3-modal-content .w3-row.w3-black.w3-center .w3-display-container span.w3-display-left.w3-btn {
+        margin-top: -20px;
+    }
+
+    .w3-modal-content .w3-row.w3-black.w3-center .w3-display-container span.w3-display-right.w3-btn {
+        margin-top: -20px;
+    }
+
+    .w3-modal-content .w3-row.w3-black.w3-center .w3-display-container img.demo.w3-opacity {
+        height: 50px;
+    }
+
+    .w3-modal-content .w3-row.w3-black.w3-center .w3-display-container img.demo.w3-opacity-off {
+        height: 50px;
+    }
+
+    .w3-modal-content .w3-row.w3-black.w3-center .w3-display-container img.demo.w3-opacity-off:nth-child(4) {
+        margin-top: 10px;
+    }
+
+    .w3-modal-content .w3-row.w3-black.w3-center .w3-display-container img.demo.w3-opacity-off:nth-child(7) {
+        margin-top: 10px;
+    }
+
+    .w3-modal-content .w3-row.w3-black.w3-center .w3-display-container img.demo.w3-opacity-off:nth-child(10) {
+        margin-top: 10px;
+    }
+
+    .w3-modal-content .w3-row.w3-black.w3-center .w3-display-container img.demo.w3-opacity-off:nth-child(12) {
+        margin-top: 10px;
+    }
+
+    .w3-modal-content .w3-container.city h2,
+    .w3-modal-content .w3-container.city h3 {
+        font-size: 120%;
+    }
+
+    .w3-modal-content .w3-container.city h3 {
+        color: rgb(30, 255, 0);
+    }
+
+    .w3-modal-content .w3-container.city h3 br {
+        display: none;
+    }
+
+    .w3-modal-content .w3-container.city h3 br+br {
+        display: block;
+    }
+
+    .w3-modal-content .w3-container.city h3 br+br+br {
+        display: block;
+    }
+
+    .w3-modal-content .w3-container.city h3 br+br+br+br {
+        display: block;
+    }
+
+    .w3-modal-content .w3-container.city h3 br+br+br+br+br {
+        display: block;
+    }
+
+    .w3-modal-content .w3-container.city h3 br+br+br+br+br+br {
+        display: block;
+    }
+
+    .w3-modal-content .w3-container.city h3 br+br+br+br+br+br+br {
+        display: block;
+    }
+
+    .w3-modal-content .w3-container.city h3 br+br+br+br+br+br+br+br {
+        display: block;
+    }
+
+    .w3-modal-content .w3-container.city h3 br+br+br+br+br+br+br+br+br {
+        display: block;
+    }
+
+    .w3-modal-content .w3-container.city h3 br+br+br+br+br+br+br+br+br+br {
+        display: block;
+    }
+
+    .w3-modal-content .w3-container.city h3 br+br+br+br+br+br+br+br+br+br+br {
+        display: block;
+    }
+
+    .w3-modal-content .w3-container.city h3 br+br+br+br+br+br+br+br+br+br+br+br {
+        display: block;
+    }
+
+    .w3-modal-content .w3-container.city h3 br+br+br+br+br+br+br+br+br+br+br+br+br {
+        display: block;
+    }
+
+    .w3-modal-content .w3-container.city h3 br+br+br+br+br+br+br+br+br+br+br+br+br+br {
+        display: block;
+    }
+
+    .w3-modal-content .w3-container.city h3 br+br+br+br+br+br+br+br+br+br+br+br+br+br+br {
+        display: block;
+    }
+
+    .w3-modal-content .w3-container.city h3 br+br+br+br+br+br+br+br+br+br+br+br+br+br+br+br {
+        display: block;
+    }
+
+    .w3-modal-content .w3-container.city h3 br+br+br+br+br+br+br+br+br+
