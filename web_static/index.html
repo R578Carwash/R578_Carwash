@@ -1,41 +1,40 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>R578 Holdings</title>
-    <link rel="stylesheet" href="./styles/common.css">
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="stylesheet" href="./styles/filters.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="./images/icon.png">
-    <link rel="stylesheet" type="text/ccs" href="bootstrap/ccs/bootstrap.ccs">
-    <link rel="stylesheet" href="bootstrap/ccs/bootstrap-them.ccs">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css">
 
     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap-them.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 
 </head>
 
 <body>
 
-    <header>
 
+    <!-- Header -->
+    <header>
         <div class="logo" onclick="closeNav()">
-            <img style="margin-top: 13%;" width="150px" height="30px" src="images/logo2.png"
+            <img style="margin-left: -88%; margin-top: 0%;" width="150px" height="30px" src="images/logo2.png"
                 class="attachment-large size-large" alt="" loading="lazy" sizes="(max-width: 150px) 100vw, 150px" />
         </div>
 
         <nav>
             <ul>
-                <li><a class="home" href="#" onclick="closeNav()">HOME</a></li>
+                <li><a class="home" href="#" onclick="closeNav()">Home</a></li>
                 <li class="dropdown">
-                    <a data-bs-toggle="dropdown" class="dropdown-toggle" href="#" onclick="closeNav()">OUR SERVICES<b
+                    <a data-bs-toggle="dropdown" class="dropdown-toggle" href="#" onclick="closeNav()">Our Services<b
                             class="caret"></b></a>
                     <ul role="menu" class="dropdown-menu">
                         <li><a href="#" onclick="closeNav()">ICECUBES</a></li>
@@ -45,816 +44,475 @@
                         <li><a href="#" onclick="closeNav()">LONGE</a></li>
                     </ul>
                 </li>
-                <li><a href="#" onclick="closeNav()">ABOUT US</a></li>
-                <li><a href="#" onclick="closeNav()">CONTACT US</a></li>
+                <li><a href="#" onclick="closeNav()">About us</a></li>
+                <li class="dropdown">
+                    <a data-bs-toggle="dropdown" class="dropdown-toggle" href="#" onclick="closeNav()">Book Services<b
+                            class="caret"></b></a>
+                    <ul role="menu" class="dropdown-menu">
+                        <li><a href="#" onclick="closeNav()">R578 Car Wash</a></li>
+                        <li><a href="#" onclick="closeNav()">R578 Creamery</a></li>
+                        <li><a href="#" onclick="closeNav()">R578 Ice Man</a></li>
+                        <li><a href="#" onclick="closeNav()">R578 Lounge</a></li>
+                        <li><a href="#" onclick="closeNav()">R578 Ice Cream Joint</a></li>
+                        <li><a href="#" onclick="closeNav()">Events</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" onclick="closeNav()">Contact Us</a></li>
 
             </ul>
         </nav>
-        <span style="font-size: 25px; cursor: 0px; float: right; margin-top: 0%; "
+
+        <span style="font-size: 25px; cursor: 0px; float: right; margin-top: -3%; "
             onclick="openNav()">&#9776;Menu</span>
 
     </header>
 
-    <div id="mySidenav" class="sidenav">
+    <div id="mySidenav" class="sidenav" onclick="closeNav()">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Home</a>
-        <a href="#">Services</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Gallary</a>
+        <a href="#home">Home</a>
+        <a href="#car-wash">R578 Car Wash</a>
+        <a href="#creamery">R578 Creamery</a>
+        <a href="#ice-man">R578 Ice Man</a>
+        <a href="#lounge">R578 Lounge</a>
+        <a href="ice-cream-joint">R578 Ice Cream Joint</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact Us</a>
     </div>
 
+    <!-- Hero Section -->
+    <section id="home" class="hero" onclick="closeNav()">
+        <!-- Main Logo -->
+        <div id="main_logo" class="logo_container" onclick="closeNav()">
 
-    <!-- Main Logo -->
-    <div id="main_logo" class="logo_container" onclick="closeNav()">
+            <img width="1500" height="400" src="images/logo2.png" class="attachment-large size-large" alt=""
+                loading="lazy" sizes="(max-width: 150px) 100vw, 150px" />
+        </div>
+        <br>
+        <br>
+        <div class="hero-content">
+            <h1>Welcome to R578 Coolers & Carwash - Your Destination for Fun and Flavour!</h1>
+            <p style="font-size: 160%">Explore our services and join us for unforgettable experiences.</p>
+            <a href="#about" class="cta-button">Learn More</a>
+        </div>
+        <br>
+        <!-- Shows -->
+        <div id="shows" class="Shows_container">
 
-        <img width="1500" height="140" src="images/logo2.png" class="attachment-large size-large" alt="" loading="lazy"
-            sizes="(max-width: 150px) 100vw, 150px" />
+            <!-- Carousel -->
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-    </div>
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
 
-    <!-- Shows -->
-    <div id="shows" class="Shows_container">
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img width="120" height="650" src="images/Carwash.png" alt="Los Angeles" class="d-block"
+                            style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img width="120" height="650" src="images/Ice_cream.png" alt="Chicago" class="d-block"
+                            style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img width="120" height="650" src="images/Iceman.png" alt="New York" class="d-block"
+                            style="width:100%">
+                    </div>
+                </div>
 
-        <!-- Carousel -->
-        <div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-            <!-- Indicators/dots -->
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
             </div>
 
-            <!-- The slideshow/carousel -->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img width="300" height="490" src="images/Carwash.png" alt="Los Angeles" class="d-block"
-                        style="width:100%">
+        </div>
+    </section>
+
+    <!-- R578 Car Wash -->
+    <section id="car-wash" onclick="closeNav()">
+        <div class="car-background">
+            <br>
+            <br>
+            <p style="font-size: 170%; margin-top: 5%;">Bring your car in for a spotless clean.</p>
+            <br>
+            <br>
+            <br>
+            <div class="w3-container">
+
+                <h1 style="font-size: 300%"></h1>
+                <p style="font-size: 120%; color: rgb(30, 255, 0);"></p>
+                <div class="w3-row-padding" style="margin:0 -16px">
+                    <div class="w3-col s4">
+                        <img src="images/Carvw.jpg" sizes="(max-width: 150px) 100vw, 150px"
+                            style="width:100%; cursor:pointer; height: 260px;" onclick="openModal();currentDiv(1)"
+                            class="w3-hover-shadow">
+                    </div>
+                    <div class="w3-col s4">
+                        <img src="images/Car3.jpg" sizes="(max-width: 150px) 100vw, 150px"
+                            style="width:100%;cursor:pointer; height: 260px;" onclick="openModal();currentDiv(2)"
+                            class="w3-hover-shadow">
+                    </div>
+                    <div class="w3-col s4">
+                        <img src="images/CarVW2.jpg" sizes="(max-width: 150px) 100vw, 150px"
+                            style="width:100%;cursor:pointer; height: 260px;" onclick="openModal();currentDiv(3)"
+                            class="w3-hover-shadow">
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img width="300" height="490" src="images/Ice_cream.png" alt="Chicago" class="d-block"
-                        style="width:100%">
-                </div>
-                <div class="carousel-item">
-                    <img width="300" height="490" src="images/Iceman.png" alt="New York" class="d-block"
-                        style="width:100%">
+
+                <div id="myModal" class="w3-modal w3-black">
+                    <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+                        onclick="closeModal()" style="cursor:pointer">×</span>
+                    <div class="w3-modal-content" style="margin-top: -6.5%;">
+
+                        <div class="w3-content" style="max-width:1200px">
+                            <img class="mySlides" src="images/Carvw.jpg" style="width:100%; height: 400px;">
+                            <img class="mySlides" src="images/Car3.jpg" style="width:100%; height: 400px;">
+                            <img class="mySlides" src="images/CarVW2.jpg" style="width:100%; height: 400px;">
+                            <img class="mySlides" src="images/Car1.jpg" style="width:100%; height: 400px;">
+                            <img class="mySlides" src="images/Car2.jpg" style="width:100%; height: 400px;">
+                            <img class="mySlides" src="images/Car4.jpg" style="width:100%; height: 400px;">
+                            <img class="mySlides" src="images/Car5.jpg" style="width:100%; height: 400px;">
+                            <img class="mySlides" src="images/Car6.jpg" style="width:100%; height: 400px;">
+                            <img class="mySlides" src="images/Car7.jpg" style="width:100%; height: 400px;">
+                            <img class="mySlides" src="images/CarA.jpg" style="width:100%; height: 400px;">
+                            <img class="mySlides" src="images/CarB.jpg" style="width:100%; height: 400px;">
+                            <img class="mySlides" src="images/CarR.jpg" style="width:100%; height: 400px;">
+                            <div class="w3-row w3-black w3-center">
+                                <div class="w3-display-container">
+                                    <p id="caption"></p>
+                                    <span class="w3-display-left w3-btn" onclick="plusDivs(-1)">❮</span>
+                                    <span class="w3-display-right w3-btn" onclick="plusDivs(1)">❯</span>
+                                </div>
+                                <div class="w3-col s4">
+                                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/Carvw.jpg"
+                                        style="width:100%; height: 100px;" onclick="currentDiv(1)" alt="R578 Car Wash">
+                                </div>
+                                <div class="w3-col s4">
+                                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/Car3.jpg"
+                                        style="width:100%; height: 100px;" onclick="currentDiv(2)" alt="R578 Car Wash">
+                                </div>
+                                <div class="w3-col s4">
+                                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/CarVW2.jpg"
+                                        style="width:100%; height: 100px;" onclick="currentDiv(3)" alt="R578 Car Wash">
+                                </div>
+                                <div class="w3-col s4">
+                                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/Car1.jpg"
+                                        style="width:100; height: 100px; " onclick="currentDiv(4)" alt="R578 Car Wash">
+                                </div>
+                                <div class="w3-col s4">
+                                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/Car2.jpg"
+                                        style="width:100%; height: 100px;" onclick="currentDiv(5)" alt="R578 Car Wash">
+                                </div>
+                                <div class="w3-col s4">
+                                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/Car4.jpg"
+                                        style="width:100%; height: 100px;" onclick="currentDiv(6)" alt="R578 Car Wash">
+                                </div>
+                                <div class="w3-col s4">
+                                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/Car5.jpg"
+                                        style="width:100%; height: 100px;" onclick="currentDiv(7)" alt="R578 Car Wash">
+                                </div>
+                                <div class="w3-col s4">
+                                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/Car6.jpg"
+                                        style="width:100%; height: 100px;" onclick="currentDiv(8)" alt="R578 Car Wash">
+                                </div>
+                                <div class="w3-col s4">
+                                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/Car7.jpg"
+                                        style="width:100%; height: 100px;" onclick="currentDiv(9)" alt="R578 Car Wash">
+                                </div>
+                                <div class="w3-col s4">
+                                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/CarA.jpg"
+                                        style="width:100%; height: 100px;" onclick="currentDiv(10)" alt="R578 Car Wash">
+                                </div>
+                                <div class="w3-col s4">
+                                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/CarB.jpg"
+                                        style="width:100%; height: 100px;" onclick="currentDiv(11)" alt="R578 Car Wash">
+                                </div>
+                                <div class="w3-col s4">
+                                    <img class="demo w3-opacity w3-hover-opacity-off" src="images/CarR.jpg"
+                                        style="width:100%; height: 100px;" onclick="currentDiv(12)" alt="R578 Car Wash">
+                                </div>
+                            </div> <!-- End row -->
+                        </div> <!-- End w3-content -->
+
+                    </div> <!-- End modal content -->
+                </div> <!-- End modal -->
+
+            </div>
+            <br>
+            <br>
+
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-red">View Price
+                Lists</button>
+
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+                    <header class="w3-container w3-red">
+                        <span onclick="document.getElementById('id01').style.display='none'"
+                            class="w3-button w3-red w3-xlarge w3-display-topright">&times;</span>
+                        <h2 style="font-weight: bold;">Price Lists:</h2>
+                    </header>
+
+                    <div class="w3-bar w3-border-bottom">
+                        <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'sedan')"
+                            style="color: red; font-weight: bold;">SEDAN/HATCHBACK</button>
+                        <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'suv')"
+                            style="color: red; font-weight: bold;">SUV</button>
+                        <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'taxi')"
+                            style="color: red; font-weight: bold;">KOMBI/QUANTUM/V-CLASS</button>
+                        <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'd/cab')"
+                            style="color: red; font-weight: bold;">BAKKIE D/CAB</button>
+                        <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 's/cab')"
+                            style="color: red; font-weight: bold;">BAKKIE S/CAB</button>
+                        <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'truck')"
+                            style="color: red; font-weight: bold;">TRUCK</button>
+                    </div>
+
+                    <div id="sedan" class="w3-container city">
+                        <h2 style="color: rgb(0, 0, 0); font-weight: bold;">SEDAN/HATCHBACK:</h2>
+                        <h3 style="color: rgb(0, 0, 0); font-weight: bold;">R70,00</h3>
+                    </div>
+
+                    <div id="suv" class="w3-container city">
+                        <h2 style="color: rgb(0, 0, 0); font-weight: bold;">SUV:</h2>
+                        <h3 style="color: rgb(0, 0, 0); font-weight: bold;">R80,00</h3>
+                    </div>
+
+                    <div id="taxi" class="w3-container city">
+                        <h2 style="color: rgb(0, 0, 0); font-weight: bold;">KOMBI/QUANTUM/V-CLASS:</h2>
+                        <h3 style="color: rgb(0, 0, 0); font-weight: bold;">R80,00</h3>
+                    </div>
+
+                    <div id="d/cab" class="w3-container city">
+                        <h2 style="color: rgb(0, 0, 0); font-weight: bold;">DOUBLE CAB BAKKIE:</h2>
+                        <h3 style="color: rgb(0, 0, 0); font-weight: bold;">R80,00</h3><br>
+                    </div>
+
+                    <div id="s/cab" class="w3-container city">
+                        <h2 style="color: rgb(0, 0, 0); font-weight: bold;">SINGLE CAB BAKKIE:</h2>
+                        <h3 style="color: rgb(0, 0, 0); font-weight: bold;">R70,00</h3><br>
+                    </div>
+
+                    <div id="truck" class="w3-container city">
+                        <h2 style="color: rgb(0, 0, 0); font-weight: bold;">TRUCK:</h2>
+                        <h3 style="color: rgb(0, 0, 0); font-weight: bold;">CONSULT MANAGEMENT</h3><br>
+                    </div>
+
+                    <div class="w3-container w3-light-grey w3-padding">
+                        <button class="w3-button w3-right w3-white w3-border"
+                            onclick="document.getElementById('id01').style.display='none'">Close</button>
+                    </div>
                 </div>
             </div>
 
-            <!-- Left and right controls/icons -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
+        </div>
         </div>
 
-    </div>
 
-    <!-- Bio -->
-    <div id="bio" class="container" style="background-image: url('Bio.png');">
+    </section>
 
-        <div style=" color: #f1f1f1; padding: 180px 30px 0px 30px;" class="gridcontents">
+    <!-- R578 Creamery --
+    <section id="creamery" onclick="closeNav()">
+        <h2>R578 Creamery</h2>
+        <p>We cater for events and offer a range of both alcoholic and non-alcoholic ice creams.</p>
+        <div class="flavour-lab">
+            <h3>Flavour Frenzy Lab</h3>
+            <p>Discover the magic in our Flavour Frenzy Lab where we experiment with wild mixtures.</p>
+        </div>
+        <div class="sundae-bar">
+            <h3>Sundae Funday Bar</h3>
+            <p>Create the sundae of your dreams with our zany array of toppings.</p>
+        </div>
+    </section> --->
 
-            <div class="griditem">
-                <a href="#">
-                    <img width="300" height="450" src="IMG_20230426_114811_edit_77149957811828.jpg"
-                        class="attachment-large size-large" alt="Profile Picture" loading="lazy"
-                        sizes="(max-width: 150px) 100vw, 150px">
-                </a>
-            </div>
-
-            <div class="griditem">
-                <h4>
-                    I'm a highly skilled Softeware Engineer with passion for building innovation software and
-                    website solutions. I have a proven track record of delivering high-quality software products. I have
-                    Advanced Diploma in Information Technology from the Vaal University of Technology(VUT). I
-                    possess a deep understanding of various programming languages, including but not limited to Java,
-                    Python, C#, C++,and SQL. As well as strong knowledge of software development methodologies and best
-                    practices.
-                </h4>
-                <br>
-                <h4>
-                    Throughout my carrer, I have successfully developed and deployed numerous software and website
-                    application across different platforms. I have expertise in Github, Jenkins, .Net, Ado.Net,
-                    Android, and VS Code enabling to tackle complex technical challenges with efficiency and creativity.
-                    I'm proficient in using wide of software development tools, frameworks, and technologies. I have
-                    hands-on experience with Node.js, Bootstrap, Materialize.css, Konckout.js, Angular.js and
-                    continually keep up-to-date with the latest advancements in the field of software Engineering.
-                </h4>
-                <input type="button" data-bs-toggle="modal" data-bs-target="#myModal1" class="btn btn-lg btn-primary"
-                    value="Show More">
-
-                <div style="color: black;" id="myModal1" class="modal fade">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="model-header">
-                                <button type="button" class="close" data-bs-dismiss="modal"
-                                    aria-hidden="true">x</button>
-                                <h3 style="margin-left:30% ;" class="modal-title">BIOGRAPHY</h3>
-                            </div>
-                            <div class="modal-body">
-                                <p><button type="button" class="btn btn-link show-text">Click Me to show more/less
-                                        information</button></p>
-                                <div class="lots-of-text">
-                                    <h4>
-                                        I'm a highly skilled Softeware Engineer with passion for building innovation
-                                        software and website solutions. I have a proven track record of delivering
-                                        high-quality software products. I have Advanced Diploma in Information
-                                        Technology from the Vaal University of Technology(VUT). I possess a
-                                        deep understanding of various programming languages, including but not
-                                        limited to Java, Python, C#, C++,and SQL. As well as strong knowledge of
-                                        software development methodologies and best practices.
-                                    </h4>
-                                    <br>
-                                    <h4>
-                                        Throughout my carrer, I have successfully developed and deployed numerous
-                                        software and website application across different platforms. I have
-                                        expertise in Github, Jenkins, .Net, Ado.Net, Android, and VS Code enabling to
-                                        tackle complex technical challenges with efficiency and creativity. I'm
-                                        proficient in using wide of software development tools, frameworks, and
-                                        technologies. I have hands-on experience with Node.js, Bootstrap,
-                                        Materialize.css, Konckout.js, Angular.js and continually keep up-to-date with
-                                        the latest advancements in the field of software Engineering.
-                                    </h4>
-                                    <br>
-                                    <h4>
-                                        In addition to technical skills, I am an excellent problem solver and
-                                        critical thinker. I excel at analyzing requirements, designing robust
-                                        architectures, and writing clean, maintain code. I am known for my attention to
-                                        detail and commitment to delivering software solutions that meet or exceed
-                                        client expectations.
-                                    </h4>
-                                    <br>
-                                    <h4>
-                                        As a team player, I effectively collaborate with cross-fuctional teams,
-                                        including product managers, designers, and quality assurance professionals,
-                                        to ensure seamless software development and delivery. I am a strong
-                                        communicator and can effectively convey complex technical concepts to both
-                                        technical and non-technical stakeholders.
-                                    </h4>
-                                    <br>
-                                    <h4>
-                                        Outside of my professional work, I enjoy staying engaged with the software
-                                        engineering community. I participate in online forums, and actively
-                                        contribute to open-source projects, demostrating my dedication to continuous
-                                        learning and growth within the field.
-                                    </h4>
-                                    <br>
-                                    <h4>
-                                        With my expertise, passion for technology, and commitment to excellence,
-                                        strive to make a positive impact through software engineering by building
-                                        innovative and user-centric solutions that transform business and improve
-                                        people's lives.
-                                    </h4>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close,
-                                    Window</button>
-                                <br>
-                            </div>
-                            <hr>
-                            <div class="divIcons">
-
-                                <p>
-                                    <a style="padding-left: 5%;" class="facebook"
-                                        href="https://www.facebook.com/masingita.maluleke.1048" target="_blank"
-                                        rel="noopener noreferrer" aria-label="facebook icon">
-                                        <svg id='Facebook' width='14' height='26' xmlns='http://www.w3.org/2000/svg'>
-                                            <path
-                                                d='M8.835 25.992V14.156h4.025l.603-4.633H8.835v-2.95c0-1.339.374-2.25 2.31-2.25H13.6V.19c-.427-.057-1.892-.182-3.596-.182C6.445.008 4.01 2.16 4.01 6.114v3.41H0v4.632h4.01v11.836h4.825Z'
-                                                fill-rule='evenodd' />
-                                        </svg>
-                                    </a>
-
-
-                                    <a style="padding-left: 15%;" class="twitter" href="#" target="_blank"
-                                        rel="noopener noreferrer" aria-label="twitter icon">
-                                        <svg id='Twitter' width='33' height='26' xmlns='http://www.w3.org/2000/svg'>
-                                            <path
-                                                d='M32.104 3.012a12.84 12.84 0 0 1-3.68 1.005A6.412 6.412 0 0 0 31.242.489a12.953 12.953 0 0 1-4.072 1.549A6.403 6.403 0 0 0 22.492.022c-3.539 0-6.408 2.858-6.408 6.38 0 .499.056.987.166 1.453A18.22 18.22 0 0 1 3.043 1.19a6.37 6.37 0 0 0 1.983 8.517 6.43 6.43 0 0 1-2.903-.801v.08c0 3.09 2.21 5.669 5.14 6.256a6.517 6.517 0 0 1-1.689.223c-.414 0-.814-.04-1.206-.118a6.408 6.408 0 0 0 5.985 4.431 12.892 12.892 0 0 1-7.959 2.727c-.517 0-1.026-.031-1.528-.087a18.17 18.17 0 0 0 9.823 2.87c11.788 0 18.231-9.722 18.231-18.153l-.021-.826a12.767 12.767 0 0 0 3.205-3.296Z'
-                                                fill-rule='evenodd' />
-                                        </svg>
-                                    </a>
-
-
-                                    <a style="padding-left: 15%;" class="linkedin" href="#" target="_blank"
-                                        rel="noopener noreferrer" aria-label="linkedin icon">
-                                        <svg id='Linkedin' width='27' height='26' xmlns='http://www.w3.org/2000/svg'>
-                                            <path
-                                                d='M22.603 20.583h-3.25v-6.07c0-3.65-4.333-3.373-4.333 0v6.07h-3.25V8.667h3.25v1.912c1.512-2.802 7.583-3.009 7.583 2.682v7.322ZM7.978 7.293a1.904 1.904 0 0 1-1.896-1.911c0-1.055.85-1.911 1.896-1.911 1.048 0 1.896.856 1.896 1.911a1.903 1.903 0 0 1-1.896 1.911Zm-1.625 13.29h3.25V8.667h-3.25v11.916ZM21.52 0H6.353A5.417 5.417 0 0 0 .937 5.417v15.166A5.417 5.417 0 0 0 6.353 26H21.52a5.417 5.417 0 0 0 5.417-5.417V5.417A5.417 5.417 0 0 0 21.52 0Z'
-                                                fill-rule='evenodd' />
-                                        </svg>
-                                    </a>
-
-
-                                    <a style="padding-left: 15%;" class="instagram" href="#" target="_blank"
-                                        rel="noopener noreferrer" aria-label="instagram icon">
-                                        <svg id='Instagram' width='27' height='26' xmlns='http://www.w3.org/2000/svg'>
-                                            <path
-                                                d='M18.702 0c4.512 0 8.171 3.638 8.171 8.125v9.75c0 4.487-3.659 8.125-8.171 8.125H8.897C4.385 26 .726 22.362.726 17.875v-9.75C.726 3.638 4.385 0 8.896 0Zm0 2.438H8.897c-3.154 0-5.72 2.55-5.72 5.687v9.75c0 3.136 2.566 5.688 5.72 5.688h9.805c3.154 0 5.72-2.552 5.72-5.688v-9.75c0-3.136-2.566-5.688-5.72-5.688ZM13.799 6.5c3.61 0 6.537 2.91 6.537 6.5s-2.927 6.5-6.537 6.5-6.537-2.91-6.537-6.5S10.19 6.5 13.8 6.5Zm0 2.438c-2.252 0-4.085 1.821-4.085 4.062 0 2.24 1.833 4.063 4.085 4.063s4.086-1.824 4.086-4.063c0-2.24-1.834-4.063-4.086-4.063Zm7.027-3.792c.482 0 .872.388.872.867 0 .478-.39.866-.872.866a.869.869 0 0 1-.87-.866c0-.479.39-.867.87-.867Z'
-                                                fill-rule='nonzero' />
-                                        </svg>
-                                    </a>
-
-
-                                    <a style="padding-left: 15%;" class="youtube" href="#" target="_blank"
-                                        rel="noopener noreferrer" aria-label="youtube icon">
-                                        <svg id='Youtube' width='30' height='24' xmlns='http://www.w3.org/2000/svg'>
-                                            <path
-                                                d='M15.086.5c.68.007 6.463.07 10.381.359.566.051 1.853.051 2.985 1.332.875.974 1.184 3.177 1.184 3.177s.309 2.614.309 5.228v2.408c0 2.397-.27 4.84-.305 5.144l-.004.032s-.309 2.204-1.184 3.178c-1.132 1.23-2.419 1.28-2.985 1.332-3.668.316-8.97.354-10.19.358h-.341c-.847-.006-7.832-.066-10.055-.307-.669-.154-2.161-.102-3.294-1.383C.713 20.384.404 18.18.404 18.18s-.309-2.562-.309-5.176v-2.661c.02-2.527.309-4.975.309-4.975S.66 3.165 1.587 2.191C2.72.961 4.007.91 4.572.86 8.491.569 14.274.507 14.954.5Zm-3.653 6.212v11.045l9.719-5.395-9.719-5.65Z'
-                                                fill-rule='evenodd' />
-                                        </svg>
-                                    </a>
-                                </p>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- R578 Ice Man -->
+    <section id="ice-man" onclick="closeNav()">
+        <div class="ice_man_sub">
+            <h1 style="font-size: 500%; padding-top: 3%; color: rgb(255, 255, 255);">R578 ICE MAN</h1>
+            <h2
+                style="font-size: 200%; padding-top: 0%; color: rgb(255, 255, 255); background-color: rgb(0, 0, 255); margin-top: 10%;">
+                We are selling Ice Cubes also available in bulk.</h2>
+            <div class="w3-container w3-teal" style="margin-top: 18%; width: 100%; height: 5%;">
+                <h3>Contact No: +27 (72) 358-7667 / +27 (72) 512-8612</h3>
             </div>
         </div>
 
-    </div>
 
-    <hr>
+    </section>
 
-    <hr>
-
-    <!-- Education -->
-    <div id="education" class="container">
-
-        <!-- Carousel --->
-        <div id="demo" class="carousel slide" data-interval="3000" data-bs-ride="carousel">
-
-            <!-- Indicators/dots --->
-            <div class="carousel-indicators">
-                <ol class="carousel-indicators">
-                    <li data-bs-target="#demo" data-bs-slide-to="0" class="active"></li>
-                    <li data-bs-target="#demo" data-bs-slide-to="1"></li>
-                    <li data-bs-target="#demo" data-bs-slide-to="2"></li>
-                    <li data-bs-target="#demo" data-bs-slide-to="3"></li>
-                    <li data-bs-target="#demo" data-bs-slide-to="4"></li>
-                </ol>
-            </div>
-
-            <!-- The slideshow/carousel --->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="Education.png" alt="First. Slide">
-                    <div style="margin-bottom: 5%;" class="carousel-caption">
-                        <div class="items">
-                            <h1 style="font-size: 45px;" class="categoryheading">Advanced Diploma in Information
-                                Technology</h1>
-
-                            <div class="gridcontents">
-
-                                <div class="griditem">
-                                    <h1>Vaal University of Technology</h1>
-                                    <h2>2023</h2>
-                                    <h3>RELAVENT COURSEWORK<h3>
-                                            <h4>
-                                                <br>Computer Security.
-                                                <br>Emerging Technology.
-                                                <br>IT Management.
-                                                <br>Advinced Software Design.
-                                                <br>Statistics for IT.
-                                                <br>Advanced Databases.
-                                                <br>Research Methodology fot IS.
-                                                <br>User Exprience Design(UXD).
-                                            </h4>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="Education.png" alt="Second. Slide">
-                    <div style="margin-bottom: 23%;" class="carousel-caption">
-                        <div class="items">
-                            <h1 class="categoryheading">Diploma in Informatiom Technology</h1>
-
-                            <div class="gridcontents">
-
-                                <div class="griditem">
-                                    <h1>Vaal University of Technology</h1>
-                                    <h2>2018 - 2020</h2>
-                                    <h3>RELAVENT COURSEWORK<h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="Education.png" alt="Third. Slide">
-                    <div style="margin-bottom: 23%;" class="carousel-caption">
-                        <div class="items">
-                            <h1 class="categoryheading">ALX Software Engineering Certeficate</h1>
-
-                            <div class="gridcontents">
-
-                                <div class="griditem">
-                                    <h1>ALX-SE Program </h1>
-                                    <h2>2022 -</h2>
-                                    <h3>RELAVENT COURSEWORK<h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="Education.png" alt="Third. Slide">
-                    <div style="margin-bottom: 23%;" class="carousel-caption">
-                        <div class="items">
-                            <h1 class="categoryheading">Diploma in Software Engineering</h1>
-
-                            <div class="gridcontents">
-
-                                <div class="griditem">
-                                    <h1>IT Varsity</h1>
-                                    <h2>2023 -</h2>
-                                    <h3>RELAVENT COURSEWORK<h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="Education.png" alt="Third. Slide">
-                    <div style="margin-bottom: 23%;" class="carousel-caption">
-                        <div class="items">
-                            <h1 class="categoryheading">Matric</h1>
-
-                            <div class="gridcontents">
-
-                                <div class="griditem">
-                                    <h1>Mbhanyele Sec. School</h1>
-                                    <h2>2010 - 2015</h2>
-                                    <h3>SUBJECTS<h3>
-                                            <h4>
-                                                <br>Achived 70+ % for Xitsonga Home Language, and Life Orientation
-                                                <br>Achived 60+ % for Mathematics, Physical Sciences, and Life Sciences
-                                                <br>Achived 50- % for English, and Agriculture Science
-                                            </h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Left and right controls/icons --->
-            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
-        </div>
-    </div>
-
-
-    <hr>
-
-    <!-- skils  -->
-    <div id="skills" class="container">
-
-        <!-- Carousel --->
-        <div id="demo1" class="carousel slide" data-interval="3000" data-bs-ride="carousel">
-
-
-            <!-- Indicators/dots --->
-            <div class="carousel-indicators">
-                <ol class="carousel-indicators">
-                    <li data-bs-target="#demo1" data-bs-slide-to="0" class="active"></li>
-                    <li data-bs-target="#demo1" data-bs-slide-to="1"></li>
-                    <li data-bs-target="#demo1" data-bs-slide-to="2"></li>
-                    <li data-bs-target="#demo1" data-bs-slide-to="3"></li>
-                    <li data-bs-target="#demo1" data-bs-slide-to="4"></li>
-                    <li data-bs-target="#demo1" data-bs-slide-to="5"></li>
-                    <li data-bs-target="#demo1" data-bs-slide-to="6"></li>
-                    <li data-bs-target="#demo1" data-bs-slide-to="7"></li>
-                </ol>
-            </div>
-
-            <!-- The slideshow/carousel --->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="Skills.png" alt="First Slide">
-                    <div style="margin-bottom: 13.9%;" class="carousel-caption">
-                        <div class="items">
-                            <h1 class="categoryheading">Programing Languages:</h1>
-                        </div>
-                        <br>
-                        <ul>
-                            <li>Java</li>
-                            <li>Python</li>
-                            <li> HTML5</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                            <li>C++</li>
-                            <li>Ruby</li>
-                            <li>PHP</li>
-                            <li>SQL</li>
-                            <li> C</li>
-                            <li>.NET</li>
-                            <li>Shell</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="Skills.png" alt="First Slide">
-                    <div style="margin-bottom: 27.9%;" class="carousel-caption">
-                        <div class="items">
-                            <h1 class="categoryheading">Operating Systems:</h1>
-                        </div>
-                        <br>
-                        <ul>
-                            <li>Linux</li>
-                            <li>Windows</li>
-                            <li>Android</li>
-                            <li>iOS</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="Skills.png" alt="First Slide">
-                    <div style="margin-bottom: 12.9%;" class="carousel-caption">
-                        <div class="items">
-                            <h1 class="categoryheading">Application and Desktop Software Development:</h1>
-                        </div>
-                        <br>
-                        <ul>
-                            <li>Android/iOS UX and UI</li>
-                            <li>SQL</li>
-                            <li>Xcode Development</li>
-                            <li>Github</li>
-                            <li>MySql</li>
-                            <li>Visual Basic</li>
-                            <li>Visual Studio Code</li>
-                            <li>Notepad++</li>
-                            <li>Ubuntu</li>
-                            <li>Gitlab</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="Skills.png" alt="First Slide">
-                    <div style="margin-bottom: 24.5%;" class="carousel-caption">
-                        <div class="items">
-                            <h1 class="categoryheading">Cloud Computing:</h1>
-                        </div>
-                        <br>
-                        <ul>
-                            <li>Azure</li>
-                            <li>AWS</li>
-                            <li>Google Cloud</li>
-                            <li>Amozon Web</li>
-                            <li>IBM Cloud</li>
-                            <li>Oracle</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="Skills.png" alt="First Slide">
-                    <div style="margin-bottom: 28%;" class="carousel-caption">
-                        <div class="items">
-                            <h1 class="categoryheading">E-Commerce Platform:</h1>
-                        </div>
-                        <br>
-                        <ul>
-                            <li>Shopif</li>
-                            <li>WooCommerce</li>
-                            <li>Big Commerce</li>
-                            <li>OpenCart</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="Skills.png" alt="First Slide">
-                    <div style="margin-bottom: 21%;" class="carousel-caption">
-                        <div class="items">
-                            <h1 class="categoryheading">Network Security:</h1>
-                        </div>
-                        <br>
-                        <ul>
-                            <li>Cloud security</li>
-                            <li>malware analysis</li>
-                            <li>Intrusion Detection</li>
-                            <li>Secude Code Development</li>
-                            <li> CEH</li>
-                            <li>CISA</li>
-                            <li> OSCP</li>
-                            <li>GCIH Data and File Encryption</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="Skills.png" alt="First Slide">
-                    <div style="margin-bottom: 26.2%;" class="carousel-caption">
-                        <div class="items">
-                            <h1 class="categoryheading">Data Analysis:</h1>
-                        </div>
-                        <br>
-                        <ul>
-                            <li>Data Queries</li>
-                            <li>Data Cube Technology</li>
-                            <li>Raw Data Processing and Integration</li>
-                            <li>OLAP Data Structures and Algorithms</li>
-                            <li>Tableau</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="Skills.png" alt="First Slide">
-                    <div style="margin-bottom: 29.7%;" class="carousel-caption">
-                        <div class="items">
-                            <h1 class="categoryheading">AI:</h1>
-                        </div>
-                        <br>
-                        <ul>
-                            <li>Machine Learning</li>
-                            <li>Natural LanuageProcessing</li>
-                            <li>AI Integratio and Application.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- Left and right controls/icons --->
-            <button class="carousel-control-prev" type="button" data-bs-target="#demo1" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demo1" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
+    <!-- R578 Lounge -->
+    <section id="lounge" onclick="closeNav()">
+        <div class="soon-lounge">
+            <h1 style="font-size: 550%; margin-top: 5%; color: rgb(255, 255, 255);">R578 Lounge (Opening Soon)</h1>
+            <!-- <p style="font-size: 250%; margin-top: 34%; color: rgb(13, 0, 255);">Teaser information about the upcoming lounge.</p>
+             <form action="signup.html" method="post">
+                <label style="font-size: 120%; color: rgb(255, 255, 255);" for="email">Sign Up for Updates:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                <button type="submit" class="cta-button">Sign Up</button>
+            </form> -->
         </div>
 
-    </div>
+    </section>
+
+    <!-- R578 Ice Cream Joint -->
+    <section id="ice-cream-joint" onclick="closeNav()">
+        <div class="cream-joint">
+            <h1 style="font-size: 520%; margin-top: 5%; color: rgb(255, 255, 255);">R578 Ice Cream Joint</h1>
+            <p style="font-size: 220%; color: rgb(25, 17, 187);">Experience live music and indulge in
+                our wide variety of ice creams and treats.</p>
+            <div class="menu">
+                <h2
+                    style="font-size: 180%; padding-top: 0%; color: rgb(255, 255, 255); background-color: rgb(0, 0, 255);">
+                    Daily Menu</h2>
+                <h4 style="color: rgb(255, 255, 255);">Ice Cream Taco - From R40</h4>
+                <h4 style="color: rgb(255, 255, 255);">Tower of Terror - From R40</h4>
+                <h4 style="color: rgb(255, 255, 255);">Ice Cream Kota - From R40</h4>
+                <h4 style="color: rgb(255, 255, 255);">Waffles and Ice Cream - From R20</h4>
+                <h4 style="color: rgb(255, 255, 255);">Alcoholic Ice Creams - From R40</h4>
+                <h4 style="color: rgb(255, 255, 255);">Frozen Yogurt - From R15</h4>
+                <h4 style="color: rgb(255, 255, 255);">Alcoholic Frozen Yogurt - From R30</h4>
+                <h4 style="color: rgb(255, 255, 255);">Milkshakes - From R20</h4>
+                <h4 style="color: rgb(255, 255, 255);">Alcoholic Shakes - From R30</h4>
+                <h4 style="color: rgb(255, 255, 255);">Off The Menu - From R3</h4>
+            </div>
+
+            <div class="w3-container w3-teal" style="margin-top: 3%; width: 100%; height: 5%;">
+                <h3>Contact No: +27 (66) 261-3888</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events -->
+    <section id="events-main" onclick="closeNav()">
+        <div class="events">
+            <h1 style="font-size: 520%; margin-top: 5%; color: rgb(0, 0, 0);">Events Organizer</h1>
+            <p style="font-size: 120%; color: rgb(255, 255, 255);">We offer standard and theme packages for birthdays,
+                weddings, and other events. Packages include cotton
+                candy, ice cream cupcakes, and more.</p>
+
+            <div class="event-types">
+                <h1 style="font-size: 420%; color: rgb(0, 0, 0);">Event Types</h1>
+
+                <p style="font-size: 150%; color: rgb(0, 0, 0);">Birthday Parties</p>
+                <p style="font-size: 150%; color: rgb(0, 0, 0);">Weddings</p>
+                <p style="font-size: 150%; color: rgb(0, 0, 0);">Chillas</p>
+
+            </div>
+            <div class="packages">
+                <h1 style="font-size: 420%; color: rgb(0, 0, 0);">Packages</h1>
+                <p style="font-size: 150%; color: rgb(0, 0, 0);">Standard Package</p>
+                <p style="font-size: 150%; color: rgb(0, 0, 0);">Theme Package</p>
+            </div>
+            <br>
+            <a href="events.html" class="cta-button">Book an Event</a>
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact" onclick="closeNav()">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h1 style="font-size: 490%;">Contact Us</h1>
+                <p style="font-size: 180%;">Phone No: +27(84) 995-6382
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/
+                    +27(72) 512-8612 </p>
+                <p style="font-size: 180%;">Email: [Your Email Address]</p>
+                <p style="font-size: 140%;">Address: <a href="https://maps.app.goo.gl/ZVooot1JaLuNBQyo9"
+                        target="_blank">R578
+                        Road, Shirley, Elim, 0960</a></p>
+            </div>
+            <div class="contact-form">
+                <form action="contact-form.html" method="post">
+                    <label style="font-size: 180%;" for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    <label style="font-size: 180%;" for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <label style="font-size: 180%;" for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                    <label style="font-size: 180%;" for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Type your message here" required></textarea>
+                    <button type="submit" class="cta-button" style="width: 150px;     margin-left: 45%;
+                     ">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="social-media" onclick="closeNav()">
+            <!-- Add social media icons here -->
+            <a style="margin-left: -10%;" href="https://www.facebook.com/profile.php?id=100057285108085&mibextid=LQQJ4d"
+                target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a style="padding-left: 20%;" href="https://twitter.com" target="_blank" title="Twitter"><i
+                    class="fab fa-twitter"></i></a>
+            <a style="padding-left: 20%;" href="https://instagram.com" target="_blank" title="Instagram"><i
+                    class="fab fa-instagram"></i></a>
+            <a style="padding-left: 20%;" href="https://linkedin.com" target="_blank" title="LinkedIn"><i
+                    class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="map" onclick="closeNav()">
+            <!-- Embed Google Map here -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1955.4446037847358!2d30.073272848693126!3d-23.16991376455701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec67904e4f1a375%3A0xcfaace4e11b6c9c!2sR578%20CAR%20WASH!5e0!3m2!1sen!2sza!4v1725612685912!5m2!1sen!2sza"
+                width="1480" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
 
     <button onclick="topFunction()" id="myBtn" title="Go to top" class="btn btn-primary btn-lg"> Home Page</button>
 
     <!-- Footer -->
-    <footer class="footer" style=" margin-left:-0.6%; margin-right:-0.6%;">
-
-        <hr>
-        <div class="row">
-            <!-- Mobile footer body -->
-            <div class="MainGrid">
-
-                <section class="selectMain">
-                    <div class="item" role=tablist>
-                        <p class="p">
-                            <strong>Quick Links</strong>
-                        </p>
-                        <div id="footerAccordion6" class="divlitem" role="tabpanel">
-                            <ul class="ullitems">
-                                <li class="litem">
-                                    <a href="index.html" target="_blank">
-                                        <span class="listtext">Main Page</span>
-                                    </a>
-                                </li>
-                                <li class="litem">
-                                    <a href="index.html" target="_blank">
-                                        <span class="listtext">Hame Page</span>
-                                    </a>
-                                </li>
-                                <li class="litem">
-                                    <a href="index.html" target="_blank">
-                                        <span class="listtext">Bio</span>
-                                    </a>
-                                </li>
-                                <li class="litem">
-                                    <a href="index.html" target="_blank">
-                                        <span class="listtext">Projects</span>
-                                    </a>
-                                </li>
-                                <li class="litem">
-                                    <a href="https://ewseta.org.za/our-vision-mission-values/" target="_blank">
-                                        <span class="listtext">Education</span>
-                                    </a>
-                                </li>
-                                <li class="litem">
-                                    <a href="https://ewsetacareers.org.za/contact/">
-                                        <span class="listtext">Skills</span>
-                                    </a>
-                                </li>
-                                <li class="litem">
-                                    <a href="index.html" target="_blank">
-                                        <span class="listtext">Contact Me</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="item" role=tablist>
-                        <p class="p">
-                            <strong>Scroll Up</strong>
-                        </p>
-                        <div id="footerAccordion7" class="divlitem" role="tabpanel">
-                            <ul class="ullitems">
-                                <li class="litem">
-                                    <a href="#main">
-                                        <span class="listtext">Home</span>
-                                    </a>
-                                </li>
-                                <li class="litem">
-                                    <a href="#bio">
-                                        <span class="listtext">Bio</span>
-                                    </a>
-                                </li>
-                                <li class="litem">
-                                    <a href="#projects">
-                                        <span class="listtext">Projects</span>
-                                    </a>
-                                </li>
-                                <li class="litem">
-                                    <a href="#education">
-                                        <span class="listtext">Education</span>
-                                    </a>
-                                </li>
-                                <li class="litem">
-                                    <a href="#skills">
-                                        <span class="listtext">Skills</span>
-                                    </a>
-                                </li>
-                                <li class="litem">
-                                    <a href="#contact">
-                                        <span class="listtext">Contact</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="item" role=tablist>
-                        <p class="p">
-                            <strong>Get In Touch</strong>
-                        </p>
-                        <div id="footerAccordion8" class="litem" role="tabpanel">
-                            <p>
-                                <strong>
-                                    Address:<br />
-                                </strong>
-                                1738 5, San Street<br /> Braamfischerville <br />
-                                Roodepoort<br />1724
-                            </p>
-                            <p>
-                                <strong>
-                                    Email Us:<br />
-                                </strong>
-                                masingitaottismaluleke@gmail.com
-                            </p>
-                            <p>
-                                <strong>
-                                    Phone Numbers:<br />
-                                </strong>
-                                +27 (84) 995-6382  / 
-                                +27 (72) 512-8612<br/>
-                                +27 (66) 261-3888  /
-                                +27 (72) 358-7667
-                            </p>
-                        </div>
-                    </div>
-                    <div class="item" role=tablist>
-                        <div class="litem">
-                            <img width="200" height="87" src="images/logo2.png" class="attachment-large size-large"
-                                alt="" loading="lazy" sizes="(max-width: 150px) 100vw, 150px" />
-                        </div>
-                    </div>
-                </section>
-            </div>
-            <!-- End Mobile footer body -->
+    <footer onclick="closeNav()">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#car-wash">R578 Car Wash</a></li>
+            <li><a href="#creamery">R578 Creamery</a></li>
+            <li><a href="#ice-man">R578 Ice Man</a></li>
+            <li><a href="#lounge">R578 Lounge</a></li>
+            <li><a href="#ice-cream-joint">R578 Ice Cream Joint</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="legal-info">
+            <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a>
         </div>
-
-        <hr>
-
-        <div class="row">
-            <div class="mainGrid">
-                <div class="divGroup">
-                    <div class="items">
-                        <div class="divIcons">
-
-                            <p>
-                                <a style="padding-left: 8%;" class="facebook"
-                                    href="https://www.facebook.com/masingita.maluleke.1048" target="_blank"
-                                    rel="noopener noreferrer" aria-label="facebook icon">
-                                    <svg id='Facebook' width='14' height='26' xmlns='http://www.w3.org/2000/svg'>
-                                        <path
-                                            d='M8.835 25.992V14.156h4.025l.603-4.633H8.835v-2.95c0-1.339.374-2.25 2.31-2.25H13.6V.19c-.427-.057-1.892-.182-3.596-.182C6.445.008 4.01 2.16 4.01 6.114v3.41H0v4.632h4.01v11.836h4.825Z'
-                                            fill-rule='evenodd' />
-                                    </svg>
-                                </a>
-
-
-                                <a style="padding-left: 18%;" class="twitter" href="#" target="_blank"
-                                    rel="noopener noreferrer" aria-label="twitter icon">
-                                    <svg id='Twitter' width='33' height='26' xmlns='http://www.w3.org/2000/svg'>
-                                        <path
-                                            d='M32.104 3.012a12.84 12.84 0 0 1-3.68 1.005A6.412 6.412 0 0 0 31.242.489a12.953 12.953 0 0 1-4.072 1.549A6.403 6.403 0 0 0 22.492.022c-3.539 0-6.408 2.858-6.408 6.38 0 .499.056.987.166 1.453A18.22 18.22 0 0 1 3.043 1.19a6.37 6.37 0 0 0 1.983 8.517 6.43 6.43 0 0 1-2.903-.801v.08c0 3.09 2.21 5.669 5.14 6.256a6.517 6.517 0 0 1-1.689.223c-.414 0-.814-.04-1.206-.118a6.408 6.408 0 0 0 5.985 4.431 12.892 12.892 0 0 1-7.959 2.727c-.517 0-1.026-.031-1.528-.087a18.17 18.17 0 0 0 9.823 2.87c11.788 0 18.231-9.722 18.231-18.153l-.021-.826a12.767 12.767 0 0 0 3.205-3.296Z'
-                                            fill-rule='evenodd' />
-                                    </svg>
-                                </a>
-
-
-                                <a style="padding-left: 18%;" class="linkedin" href="#" target="_blank"
-                                    rel="noopener noreferrer" aria-label="linkedin icon">
-                                    <svg id='Linkedin' width='27' height='26' xmlns='http://www.w3.org/2000/svg'>
-                                        <path
-                                            d='M22.603 20.583h-3.25v-6.07c0-3.65-4.333-3.373-4.333 0v6.07h-3.25V8.667h3.25v1.912c1.512-2.802 7.583-3.009 7.583 2.682v7.322ZM7.978 7.293a1.904 1.904 0 0 1-1.896-1.911c0-1.055.85-1.911 1.896-1.911 1.048 0 1.896.856 1.896 1.911a1.903 1.903 0 0 1-1.896 1.911Zm-1.625 13.29h3.25V8.667h-3.25v11.916ZM21.52 0H6.353A5.417 5.417 0 0 0 .937 5.417v15.166A5.417 5.417 0 0 0 6.353 26H21.52a5.417 5.417 0 0 0 5.417-5.417V5.417A5.417 5.417 0 0 0 21.52 0Z'
-                                            fill-rule='evenodd' />
-                                    </svg>
-                                </a>
-
-
-                                <a style="padding-left: 18%;" class="instagram" href="#" target="_blank"
-                                    rel="noopener noreferrer" aria-label="instagram icon">
-                                    <svg id='Instagram' width='27' height='26' xmlns='http://www.w3.org/2000/svg'>
-                                        <path
-                                            d='M18.702 0c4.512 0 8.171 3.638 8.171 8.125v9.75c0 4.487-3.659 8.125-8.171 8.125H8.897C4.385 26 .726 22.362.726 17.875v-9.75C.726 3.638 4.385 0 8.896 0Zm0 2.438H8.897c-3.154 0-5.72 2.55-5.72 5.687v9.75c0 3.136 2.566 5.688 5.72 5.688h9.805c3.154 0 5.72-2.552 5.72-5.688v-9.75c0-3.136-2.566-5.688-5.72-5.688ZM13.799 6.5c3.61 0 6.537 2.91 6.537 6.5s-2.927 6.5-6.537 6.5-6.537-2.91-6.537-6.5S10.19 6.5 13.8 6.5Zm0 2.438c-2.252 0-4.085 1.821-4.085 4.062 0 2.24 1.833 4.063 4.085 4.063s4.086-1.824 4.086-4.063c0-2.24-1.834-4.063-4.086-4.063Zm7.027-3.792c.482 0 .872.388.872.867 0 .478-.39.866-.872.866a.869.869 0 0 1-.87-.866c0-.479.39-.867.87-.867Z'
-                                            fill-rule='nonzero' />
-                                    </svg>
-                                </a>
-
-
-                                <a style="padding-left: 18%;" class="youtube" href="#" target="_blank"
-                                    rel="noopener noreferrer" aria-label="youtube icon">
-                                    <svg id='Youtube' width='30' height='24' xmlns='http://www.w3.org/2000/svg'>
-                                        <path
-                                            d='M15.086.5c.68.007 6.463.07 10.381.359.566.051 1.853.051 2.985 1.332.875.974 1.184 3.177 1.184 3.177s.309 2.614.309 5.228v2.408c0 2.397-.27 4.84-.305 5.144l-.004.032s-.309 2.204-1.184 3.178c-1.132 1.23-2.419 1.28-2.985 1.332-3.668.316-8.97.354-10.19.358h-.341c-.847-.006-7.832-.066-10.055-.307-.669-.154-2.161-.102-3.294-1.383C.713 20.384.404 18.18.404 18.18s-.309-2.562-.309-5.176v-2.661c.02-2.527.309-4.975.309-4.975S.66 3.165 1.587 2.191C2.72.961 4.007.91 4.572.86 8.491.569 14.274.507 14.954.5Zm-3.653 6.212v11.045l9.719-5.395-9.719-5.65Z'
-                                            fill-rule='evenodd' />
-                                    </svg>
-                                </a>
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <br>
+        <br>
+        <div class="newsletter-signup">
+            <form action="newsletter-signup.html" method="post">
+                <label for="newsletter-email">Subscribe to Our Newsletter:</label>
+                <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Enter your email">
+                <button type="submit" class="cta-button">Subscribe</button>
+            </form>
         </div>
-
-        <hr>
-        <div class="row">
-            <section class="sectB">
-                <div class="divBMain">
-                    <div class="divFB">
-                        <div class="divSB">
-                            <div class="divTB">
-                                <div class="divFouthB">
-                                    <p class="p">
-
-                                        <span>© <img width="100" height="15" src="images/logo2.png"
-                                                class="attachment-large size-large" alt="" loading="lazy"
-                                                sizes="(max-width: 150px) 100vw, 150px" /> , All Rights Reserved</span>
-
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="divFB">
-                        <div class="divSB">
-                            <div class="divTB">
-                                <div class="divFouthB">
-                                    <p class="p1">
-                                        Developed by <img width="70" height="25" src="images/20240510_103409_0000.png"
-                                            class="attachment-large size-large" alt="" loading="lazy"
-                                            sizes="(max-width: 150px) 100vw, 150px" />
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <hr>
-
     </footer>
 
+    <script src="scripts.js"></script>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript">
 
         $(document).ready(function () {
-            $(".dropdown-toggley").dropdown();
+            $(".dropdown-toggle").dropdown();
         });
 
         function openNav() {
 
-            document.getElementById("mySidenav").style.width = "200px";
+            document.getElementById("mySidenav").style.width = "300px";
             document.getElementById("main_logo").style.marginRight = "200px";
-            document.getElementById("shows").style.marginRight = "200px";
-            document.body.style.backgroundColor = "rgba(0,0,0,0,4)";
+            document.body.style.backgroundColor = "rgba(4, 5, 4, 0.5)";
+            document.body.style.backgroundColor = "rgba(4,5,4,5,4)";
 
         }
 
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("main_logo").style.marginRight = "0";
+            document.getElementById("main_logo").style.marginRight = "100p";
             document.getElementById("shows").style.marginRight = "0";
             document.body.style.backgroundColor = "white";
         }
@@ -866,7 +524,7 @@
         window.onscroll = function () { scrollFunction() };
 
         function scrollFunction() {
-            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 5000) {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 mybutton.style.display = "block";
                 document.getElementById("mySidenav").style.width = "0";
                 document.getElementById("main_logo").style.marginRight = "90px";
@@ -883,10 +541,62 @@
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
 
+        // For carwash photos
+        function openModal() {
+            document.getElementById('myModal').style.display = "block";
+        }
 
+        function closeModal() {
+            document.getElementById('myModal').style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+            }
+            x[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " w3-opacity-off";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+
+        //Modal Tabs
+        document.getElementsByClassName("tablink")[0].click();
+
+        function openCity(evt, cityName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].classList.remove("w3-light-grey");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.classList.add("w3-light-grey");
+        }
     </script>
 
 </body>
-
 
 </html>

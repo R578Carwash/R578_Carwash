@@ -1,0 +1,456 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: #066a86;
+    /* Coral color for the header */
+    color: #fff;
+    padding: 10px 0;
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid #CCCCCC;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    /*position: fixed;*/
+}
+
+header .logo img {
+    max-width: 150px;
+    margin-left: 10px;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: -1.5%;
+
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+
+    text-decoration: none;
+    font-weight: bold;
+    text-decoration: none;
+    color: #dbea0d;
+    font-weight: bold;
+    margin-left: 60px;
+    transition: 0.7s ease-in-out;
+}
+
+header ul li a:hover {
+    color: #ff0000;
+}
+
+/*The side navigation menu*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 60px;
+    right: 0;
+    background-color: #066a86;
+    color: #dbea0d;
+    overflow-x: hidden;
+    padding-top: 70px;
+    transition: 0.3s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #dbea0d;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+#myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: #066a86;
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color: #555;
+    /* Add a dark-grey background on hover */
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    ul.nav-tabs {
+        width: 180px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    ul.nav-tabs {
+        width: 220px;
+    }
+}
+
+.hero {
+    color: #0717f4;
+    text-align: center;
+    padding: 5px 0px 0px 0px;
+    margin-top: 2%;
+}
+
+.hero-content {
+    background-color: #829e9e;
+    width: 100%;
+    height: 100%;
+    /* Adjust height as needed */
+    background-size: cover;
+    /* Scale the image to cover the whole div */
+    background-position: center;
+    /* Center the image within the div */
+    background-repeat: no-repeat;
+    /* Prevent the image from repeating */
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #ff6347;
+    /* Tomato color for the button */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #ff4500;
+    /* Darker tomato color for hover */
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.feature {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+form {
+    margin: 20px 0;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ff4500;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: -7.2%;
+}
+
+footer ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .legal-info a {
+    color: #fff;
+}
+
+.social-media {
+    margin: 10px 0;
+}
+
+.map {
+    margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Basic reset for margin and padding */
+body,
+h2,
+p,
+form,
+label,
+input,
+textarea {
+    margin: 0;
+    padding: 0;
+}
+
+.car-background {
+    background-image: url('images/Carwash_Back.png');
+    background-size: cover;
+    height: 650px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: #ffffff;
+    margin-top: -2.5%;
+}
+
+.soon-lounge {
+    background-image: url('images/Lounge.png');
+    background-size: cover;
+    height: 650px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: #000000;
+    margin-top: -10%;
+
+}
+
+.ice_man_sub {
+    background-image: url('images/Ice_men.png');
+    background-size: cover;
+    height: 650px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: #000000;
+    margin-top: -5%;
+}
+
+.cream-joint {
+    background-image: url('images/cream.png');
+    background-size: cover;
+    height: 650px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: #000000;
+    margin-top: -10%;
+}
+
+.events {
+    background-image: url('images/Events.png');
+    background-size: cover;
+    height: 650px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: #000000;
+    margin-top: -10%;
+}
+
+/* Container to hold both contact info and form */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-image: url('images/Contact.png');
+    background-size: cover;
+    margin-top: -5%;
+
+}
+
+/* Style for the contact info section */
+.contact-info {
+    flex: 1;
+    padding: 120px;
+    box-sizing: border-box;
+    color: #16eb0b;
+}
+
+/* Style for the contact form section */
+.contact-form {
+    flex: 2;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Style for the form elements */
+form {
+    display: flex;
+    flex-direction: column;
+    color: #16eb0b;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+button.cta-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100px;
+    margin-left: 50%;
+}
+
+button.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.social-icons {
+    display: flex;
+    font-size: 1000px;
+    gap: 50px;
+    /* Space between icons */
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #333;
+    /* Default color */
+    font-size: 24px;
+    /* Size of icons */
+    transition: color 0.3s;
+    width: 100%;
+    height: 1000px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+    /* Color on hover */
+}
+
+.map {
+    width: 100%;
+    height: 400px;
+    /* Adjust height as needed */
+    border: none;
+}
+
+.mySlides {
+    display: none
+}
+
+.city {
+    display: none
+}

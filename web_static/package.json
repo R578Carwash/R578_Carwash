@@ -1,0 +1,22 @@
+{
+  "name": "web_static",
+  "version": "1.0.0",
+  "description": "R58 Website Package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tinyu01/R578_Holdings.git"
+  },
+  "author": "Maingita Ottis Maluleke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tinyu01/R578_Holdings/issues"
+  },
+  "homepage": "https://github.com/Tinyu01/R578_Holdings/WEB_STATIC/index.html",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
