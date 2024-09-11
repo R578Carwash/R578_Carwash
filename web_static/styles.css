@@ -12,8 +12,7 @@ body {
 }
 
 header {
-    background-color: #066a86;
-    /* Coral color for the header */
+    background-color: #066a86; /* Coral color for the header */
     color: #fff;
     padding: 10px 0;
     height: 60px;
@@ -21,8 +20,9 @@ header {
     border-bottom: 1px solid #CCCCCC;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     text-align: center;
-    /*position: fixed;*/
+    position: relative;
 }
 
 header .logo img {
@@ -94,14 +94,87 @@ header ul li a:hover {
     margin-left: 50px;
 }
 
+/* Media Queries for Responsive Design */
 
-@media screen and (max-height: 450px) {
+/* Tablets and small laptops */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none; /* Hide navigation links by default */
+        width: 100%;
+        text-align: left;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .logo img {
+        margin-left: 0;
+    }
+
     .sidenav {
-        padding: 15px;
+        top: 60px;
+        width: 250px; /* Adjust width as needed */
     }
 
     .sidenav a {
+        font-size: 22px;
+    }
+}
+
+/* Mobile phones */
+@media screen and (max-width: 480px) {
+    .sidenav {
+        padding-top: 50px;
+        width: 200px; /* Adjust width as needed */
+    }
+
+    .sidenav a {
+        font-size: 20px;
+    }
+
+    .sidenav .closebtn {
+        font-size: 30px;
+    }
+
+    header .logo img {
+        max-width: 120px; /* Adjust logo size for smaller screens */
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block; /* Show menu button */
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    nav ul.show {
+        display: block;
+    }
+}
+
+/* Extra small devices */
+@media screen and (max-width: 320px) {
+    .sidenav a {
         font-size: 18px;
+    }
+
+    .sidenav .closebtn {
+        font-size: 28px;
     }
 }
 
@@ -138,17 +211,6 @@ header ul li a:hover {
     /* Add a dark-grey background on hover */
 }
 
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-    ul.nav-tabs {
-        width: 180px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    ul.nav-tabs {
-        width: 220px;
-    }
-}
 
 .hero {
     color: #0717f4;
@@ -453,4 +515,122 @@ button.cta-button:hover {
 
 .city {
     display: none
+}
+
+
+/*nbdsbb*/
+/* Add a media query for smaller screens */
+@media screen and (max-width: 768px) {
+    /* Adjust margins and spacing for smaller screens */
+    header {
+        padding: 5px 0;
+        height: 50px;
+    }
+
+    header .logo img {
+        max-width: 100px;
+        margin-left: 5px;
+    }
+
+    nav ul {
+        margin-top: -3%;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        margin-left: 30px;
+    }
+
+    .sidenav {
+        top: 50px;
+        padding-top: 50px;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        padding: 8px 16px;
+    }
+
+    section {
+        padding: 20px 10px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    .feature {
+        margin: 5px 0;
+    }
+
+    form input,
+    form textarea {
+        margin: 5px 0;
+    }
+
+    form button {
+        padding: 8px 16px;
+    }
+
+    footer {
+        margin-top: -5%;
+    }
+
+    .social-media {
+        margin: 5px 0;
+    }
+
+    .map {
+        margin: 10px 0;
+    }
+
+    .car-background,
+    .soon-lounge,
+    .ice_man_sub,
+    .cream-joint,
+    .events {
+        height: 400px;
+        margin-top: -5%;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .contact-info {
+        padding: 60px;
+    }
+
+    .contact-form {
+        padding: 10px;
+    }
+
+    button.cta-button {
+        width: 80px;
+        margin-left: 0;
+    }
+
+    .social-icons {
+        font-size: 20px;
+        gap: 20px;
+    }
+
+    .map {
+        height: 300px;
+    }
 }
