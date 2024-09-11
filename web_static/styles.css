@@ -12,7 +12,8 @@ body {
 }
 
 header {
-    background-color: #066a86; /* Coral color for the header */
+    background-color: #066a86;
+    /* Coral color for the header */
     color: #fff;
     padding: 10px 0;
     height: 60px;
@@ -27,8 +28,10 @@ header {
 
 header .logo img {
     max-width: 150px;
+    max-height: 40px;
     margin-left: 10px;
-
+    margin-left: -90%;
+    margin-top: -0.1%;
 }
 
 nav ul {
@@ -56,6 +59,12 @@ nav ul li a {
 
 header ul li a:hover {
     color: #ff0000;
+}
+
+.logo_container img {
+    width: 1300px;
+    max-height: 400px;
+    margin-left: 5%;
 }
 
 /*The side navigation menu*/
@@ -106,7 +115,8 @@ header ul li a:hover {
 
     nav ul {
         flex-direction: column;
-        display: none; /* Hide navigation links by default */
+        display: none;
+        /* Hide navigation links by default */
         width: 100%;
         text-align: left;
     }
@@ -120,12 +130,24 @@ header ul li a:hover {
     }
 
     .logo img {
-        margin-left: 0;
+        width: 120px;
+        height: 30px;
+        margin-left: 10px;
+        margin-left: -900%;
+        margin-top: 9%;
     }
+
+    .logo_container img {
+        max-width: 768px;
+        max-height: 300px;
+        margin-left: 5%;
+    }
+
 
     .sidenav {
         top: 60px;
-        width: 250px; /* Adjust width as needed */
+        width: 250px;
+        /* Adjust width as needed */
     }
 
     .sidenav a {
@@ -137,7 +159,8 @@ header ul li a:hover {
 @media screen and (max-width: 480px) {
     .sidenav {
         padding-top: 50px;
-        width: 200px; /* Adjust width as needed */
+        width: 200px;
+        /* Adjust width as needed */
     }
 
     .sidenav a {
@@ -149,15 +172,22 @@ header ul li a:hover {
     }
 
     header .logo img {
-        max-width: 120px; /* Adjust logo size for smaller screens */
+        max-width: 120px;
+        /* Adjust logo size for smaller screens */
     }
 
     nav ul {
         display: none;
     }
 
+    .logo_container img {
+        width: 480px;
+        height: 200px;
+        margin-left: 10%;
+    }
     .menu-btn {
-        display: block; /* Show menu button */
+        display: block;
+        /* Show menu button */
         font-size: 30px;
         cursor: pointer;
     }
@@ -173,11 +203,16 @@ header ul li a:hover {
         font-size: 18px;
     }
 
+    .logo_container img {
+        width: 320px;
+        height: 100px;
+        margin-left: 15%;
+    }
+
     .sidenav .closebtn {
         font-size: 28px;
     }
 }
-
 
 #myBtn {
     display: none;
@@ -521,6 +556,7 @@ button.cta-button:hover {
 /*nbdsbb*/
 /* Add a media query for smaller screens */
 @media screen and (max-width: 768px) {
+
     /* Adjust margins and spacing for smaller screens */
     header {
         padding: 5px 0;
