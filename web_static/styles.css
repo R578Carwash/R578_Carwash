@@ -30,7 +30,7 @@ header .logo img {
     max-width: 150px;
     max-height: 40px;
     margin-left: 10px;
-    margin-left: -90%;
+    margin-left: -85%;
     margin-top: -0.1%;
 }
 
@@ -108,32 +108,48 @@ header ul li a:hover {
 /* Tablets and small laptops */
 @media screen and (max-width: 768px) {
     header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
+        background-color: #066a86;
+        /* Coral color for the header */
+        color: #fff;
+        padding: 1000px 100px;
+        height: 50px;
+        width: 768px;
+        border-bottom: 1px solid #CCCCCC;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        position: relative;
     }
 
     nav ul {
-        flex-direction: column;
-        display: none;
-        /* Hide navigation links by default */
-        width: 100%;
-        text-align: left;
-    }
-
-    nav ul.show {
+        list-style: none;
         display: flex;
-    }
+        justify-content: center;
+        margin-top: 2000%;
+        width: 768px;
 
+    }
     nav ul li {
-        margin: 10px 0;
+        margin: 0 15px;
+    }
+    nav ul li a {
+
+        text-decoration: none;
+        font-weight: bold;
+        text-decoration: none;
+        color: #dbea0d;
+        font-weight: bold;
+        margin-left: 80px;
+        transition: 0.7s ease-in-out;
     }
 
+   
     .logo img {
         width: 120px;
         height: 30px;
         margin-left: 10px;
-        margin-left: -900%;
+        margin-left: -50px;
         margin-top: 9%;
     }
 
@@ -141,22 +157,30 @@ header ul li a:hover {
         max-width: 768px;
         max-height: 300px;
         margin-left: 5%;
+        margin-top: 20%;
     }
 
 
-    .sidenav {
-        top: 60px;
-        width: 250px;
-        /* Adjust width as needed */
-    }
-
-    .sidenav a {
-        font-size: 22px;
-    }
+    
 }
 
 /* Mobile phones */
 @media screen and (max-width: 480px) {
+    header {
+        background-color: #066a86;
+        /* Coral color for the header */
+        color: #fff;
+        padding: 10px 0;
+        height: 30px;
+        width: 100%;
+        border-bottom: 1px solid #CCCCCC;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        position: relative;
+    }
+
     .sidenav {
         padding-top: 50px;
         width: 200px;
@@ -185,6 +209,7 @@ header ul li a:hover {
         height: 200px;
         margin-left: 10%;
     }
+
     .menu-btn {
         display: block;
         /* Show menu button */
@@ -199,6 +224,21 @@ header ul li a:hover {
 
 /* Extra small devices */
 @media screen and (max-width: 320px) {
+    header {
+        background-color: #066a86;
+        /* Coral color for the header */
+        color: #fff;
+        padding: 10px 0;
+        height: 0px;
+        width: 100%;
+        border-bottom: 1px solid #CCCCCC;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        position: relative;
+    }
+
     .sidenav a {
         font-size: 18px;
     }
