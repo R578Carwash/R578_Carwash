@@ -168,7 +168,7 @@ header ul li a:hover {
         margin-left: 5%;
         margin-top: 20%;
     }
-    
+
     .contact-container{
         margin-top: 5%;
     }
@@ -177,7 +177,7 @@ header ul li a:hover {
     }
     
     .contact-container .contact-info p {
-        font-size: 160%;
+        font-size: 150%;
     }
     
 
@@ -247,7 +247,7 @@ header ul li a:hover {
     }
     
     .contact-container .contact-info p {
-        font-size: 140%;
+        font-size: 130%;
     }
 }
 
@@ -291,7 +291,7 @@ header ul li a:hover {
         font-size: 100%;
     }
     .contact-container .contact-info p {
-        font-size: 120%;
+        font-size: 110%;
     }
 }
 
