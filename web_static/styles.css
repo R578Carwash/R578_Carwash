@@ -168,7 +168,9 @@ header ul li a:hover {
 
 
 }
-
+.contact-container{
+    margin-top: 10%;
+}
 .contact-container .contact-info h1 {
     font-size: 290%;
 }
@@ -231,6 +233,9 @@ header ul li a:hover {
     }
 }
 
+.contact-container{
+    margin-top: 10%;
+}
 .contact-container .contact-info h1 {
     font-size: 190%;
 }
@@ -264,9 +269,11 @@ header ul li a:hover {
     .sidenav .closebtn {
         font-size: 28px;
     }
-
+    .contact-container{
+        margin-top: 10%;
+    }
     .contact-container .contact-info h1 {
-        font-size: 10%;
+        font-size: 100%;
     }
 }
 
