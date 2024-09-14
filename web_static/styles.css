@@ -103,6 +103,10 @@ header ul li a:hover {
     margin-left: 50px;
 }
 
+.contact-container .contact-info h1 {
+    font-size: 490%;
+}
+
 /* Media Queries for Responsive Design */
 
 /* Tablets and small laptops */
@@ -130,9 +134,11 @@ header ul li a:hover {
         width: 768px;
 
     }
+
     nav ul li {
         margin: 0 15px;
     }
+
     nav ul li a {
 
         text-decoration: none;
@@ -144,7 +150,7 @@ header ul li a:hover {
         transition: 0.7s ease-in-out;
     }
 
-   
+
     .logo img {
         width: 120px;
         height: 30px;
@@ -160,10 +166,11 @@ header ul li a:hover {
         margin-top: 20%;
     }
 
-    .hero {
-        
-    }
-    
+
+}
+
+.contact-container .contact-info h1 {
+    font-size: 290%;
 }
 
 /* Mobile phones */
@@ -224,6 +231,9 @@ header ul li a:hover {
     }
 }
 
+.contact-container .contact-info h1 {
+    font-size: 190%;
+}
 /* Extra small devices */
 @media screen and (max-width: 320px) {
     header {
@@ -253,6 +263,10 @@ header ul li a:hover {
 
     .sidenav .closebtn {
         font-size: 28px;
+    }
+
+    .contact-container .contact-info h1 {
+        font-size: 90%;
     }
 }
 
