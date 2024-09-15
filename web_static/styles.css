@@ -103,6 +103,18 @@ header ul li a:hover {
     margin-left: 50px;
 }
 
+.cream-joint h1{
+    font-size: 520%; 
+}
+
+.cream-joint p{
+    font-size: 220%; 
+}
+
+.cream-joint menu h2{
+    font-size: 180%; 
+}
+
 .events h1 {
     font-size: 520%;
 }
@@ -200,19 +212,27 @@ header ul li a:hover {
     }
 
     .cream-joint h1{
-        font-size: 520%; 
+        font-size: 240%; 
     }
 
     .cream-joint p{
-        font-size: 220%; 
+        font-size: 120%; 
     }
 
-    .cream-joint menu h2{
-        font-size: 180%; 
+    .cream-joint .menu h2{
+        font-size: 90%; 
+    }
+
+    .cream-joint .menu h4{
+        font-size: 75%; 
+    }
+
+    .cream-joint .w3-container h3{
+        font-size: 100%; 
     }
 
     .events h1 {
-        font-size: 200%;
+        font-size: 180%;
     }
 
     .events p {
@@ -312,15 +332,23 @@ header ul li a:hover {
     }
 
     .cream-joint h1{
-        font-size: 10%; 
+        font-size: 140%; 
     }
 
     .cream-joint p{
-        font-size: 0%; 
+        font-size: 100%; 
     }
 
-    .cream-joint menu h2{
-        font-size: 0%; 
+    .cream-joint .menu h2{
+        font-size: 70%; 
+    }
+
+    .cream-joint .menu h4{
+        font-size: 55%; 
+    }
+
+    .cream-joint .w3-container h3{
+        font-size: 80%; 
     }
 
     .events h1 {
@@ -397,27 +425,27 @@ header ul li a:hover {
     }
 
     .events h1 {
-        font-size: 160%;
+        font-size: 165%;
     }
 
     .events p {
-        font-size: 40%;
+        font-size: 45%;
     }
 
     .events .event-types h1 {
-        font-size: 80%;
+        font-size: 85%;
     }
 
     .events .event-types p {
-        font-size: 55%;
+        font-size: 65%;
     }
 
     .events .packages h1 {
-        font-size: 80%;
+        font-size: 85%;
     }
 
     .events .packages p {
-        font-size: 55%;
+        font-size: 65%;
     }
 
     .contact-container {
