@@ -223,10 +223,6 @@ header ul li a:hover {
         font-size: 100%;
     }
 
-    .events-main  {
-        height: 750px;
-    }
-
     .contact-container {
         margin-top: 5%;
     }
@@ -301,6 +297,30 @@ header ul li a:hover {
 
     nav ul.show {
         display: block;
+    }
+
+    .events h1 {
+        font-size: 180%;
+    }
+
+    .events p {
+        font-size: 60%;
+    }
+
+    .events .event-types h1 {
+        font-size: 100%;
+    }
+
+    .events .event-types p {
+        font-size: 80%;
+    }
+
+    .events .packages h1 {
+        font-size: 100%;
+    }
+
+    .events .packages p {
+        font-size: 80%;
     }
 
     .contact-container {
