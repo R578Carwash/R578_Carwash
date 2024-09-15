@@ -103,6 +103,14 @@ header ul li a:hover {
     margin-left: 50px;
 }
 
+.ice_man_sub h1{
+    font-size: 500%; 
+}
+
+.ice_man_sub h2{
+    font-size: 200%;  
+}
+
 .soon-lounge h1{
     font-size: 550%; 
 }
@@ -213,6 +221,18 @@ header ul li a:hover {
         max-height: 300px;
         margin-left: 5%;
         margin-top: 20%;
+    }
+
+    .ice_man_sub h1{
+        font-size: 450%; 
+    }
+
+    .ice_man_sub h2{
+        font-size: 150%;  
+    }
+
+    .ice_man_sub .w3-container h3{
+        font-size: 100%; 
     }
 
     .soon-lounge h1{
@@ -337,6 +357,18 @@ header ul li a:hover {
 
     nav ul.show {
         display: block;
+    }
+
+    .ice_man_sub h1{
+        font-size: 400%; 
+    }
+
+    .ice_man_sub h2{
+        font-size: 100%;  
+    }
+
+    .ice_man_sub .w3-container h3{
+        font-size: 100%; 
     }
 
     .soon-lounge h1{
