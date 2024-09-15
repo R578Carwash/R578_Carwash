@@ -110,6 +110,11 @@ header ul li a:hover {
     font-size: 180%;
 }
 
+.contact-container .contact-form label {
+    font-size: 180%;
+}
+
+
 /* Media Queries for Responsive Design */
 
 /* Tablets and small laptops */
@@ -177,6 +182,10 @@ header ul li a:hover {
     }
     
     .contact-container .contact-info p {
+        font-size: 150%;
+    }
+
+    .contact-container .contact-form label {
         font-size: 150%;
     }
     
@@ -247,7 +256,11 @@ header ul li a:hover {
     }
     
     .contact-container .contact-info p {
-        font-size: 120%;
+        font-size: 115%;
+    }
+
+    .contact-container .contact-form label {
+        font-size: 115%;
     }
 }
 
@@ -291,7 +304,11 @@ header ul li a:hover {
         font-size: 100%;
     }
     .contact-container .contact-info p {
-        font-size: 100%;
+        font-size: 95%;
+    }
+
+    .contact-container .contact-form label {
+        font-size: 95%;
     }
 }
 
