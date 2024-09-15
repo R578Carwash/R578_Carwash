@@ -199,6 +199,18 @@ header ul li a:hover {
         margin-top: 20%;
     }
 
+    .cream-joint h1{
+        font-size: 520%; 
+    }
+
+    .cream-joint p{
+        font-size: 220%; 
+    }
+
+    .cream-joint menu h2{
+        font-size: 180%; 
+    }
+
     .events h1 {
         font-size: 200%;
     }
@@ -299,28 +311,40 @@ header ul li a:hover {
         display: block;
     }
 
+    .cream-joint h1{
+        font-size: 10%; 
+    }
+
+    .cream-joint p{
+        font-size: 0%; 
+    }
+
+    .cream-joint menu h2{
+        font-size: 0%; 
+    }
+
     .events h1 {
-        font-size: 180%;
+        font-size: 185%;
     }
 
     .events p {
-        font-size: 60%;
+        font-size: 65%;
     }
 
     .events .event-types h1 {
-        font-size: 100%;
+        font-size: 105%;
     }
 
     .events .event-types p {
-        font-size: 70%;
+        font-size: 80%;
     }
 
     .events .packages h1 {
-        font-size: 100%;
+        font-size: 105%;
     }
 
     .events .packages p {
-        font-size: 70%;
+        font-size: 80%;
     }
 
     .contact-container {
@@ -373,27 +397,27 @@ header ul li a:hover {
     }
 
     .events h1 {
-        font-size: 180%;
+        font-size: 160%;
     }
 
     .events p {
-        font-size: 60%;
+        font-size: 40%;
     }
 
     .events .event-types h1 {
-        font-size: 100%;
+        font-size: 80%;
     }
 
     .events .event-types p {
-        font-size: 80%;
+        font-size: 55%;
     }
 
     .events .packages h1 {
-        font-size: 100%;
+        font-size: 80%;
     }
 
     .events .packages p {
-        font-size: 80%;
+        font-size: 55%;
     }
 
     .contact-container {
