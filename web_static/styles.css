@@ -103,9 +103,34 @@ header ul li a:hover {
     margin-left: 50px;
 }
 
+.events h1 {
+    font-size: 520%;
+}
+
+.events p {
+    font-size: 120%;
+}
+
+.events .event-types h1 {
+    font-size: 420%;
+}
+
+.events .event-types p {
+    font-size: 150%;
+}
+
+.events .packages h1 {
+    font-size: 420%;
+}
+
+.events .packages p {
+    font-size: 150%;
+}
+
 .contact-container .contact-info h1 {
     font-size: 490%;
 }
+
 .contact-container .contact-info p {
     font-size: 180%;
 }
@@ -174,13 +199,42 @@ header ul li a:hover {
         margin-top: 20%;
     }
 
-    .contact-container{
+    .events h1 {
+        font-size: 200%;
+    }
+
+    .events p {
+        font-size: 80%;
+    }
+
+    .events .event-types h1 {
+        font-size: 120%;
+    }
+
+    .events .event-types p {
+        font-size: 100%;
+    }
+
+    .events .packages h1 {
+        font-size: 120%;
+    }
+
+    .events .packages p {
+        font-size: 100%;
+    }
+
+    .events-main  {
+        height: 750px;
+    }
+
+    .contact-container {
         margin-top: 5%;
     }
+
     .contact-container .contact-info h1 {
         font-size: 290%;
     }
-    
+
     .contact-container .contact-info p {
         font-size: 150%;
     }
@@ -188,7 +242,7 @@ header ul li a:hover {
     .contact-container .contact-form label {
         font-size: 150%;
     }
-    
+
 
 }
 
@@ -248,13 +302,15 @@ header ul li a:hover {
     nav ul.show {
         display: block;
     }
-    .contact-container{
+
+    .contact-container {
         margin-top: 5%;
     }
+
     .contact-container .contact-info h1 {
         font-size: 190%;
     }
-    
+
     .contact-container .contact-info p {
         font-size: 115%;
     }
@@ -295,7 +351,8 @@ header ul li a:hover {
     .sidenav .closebtn {
         font-size: 28px;
     }
-    .contact-container{
+
+    .contact-container {
         margin-top: 5%;
     }
 
@@ -303,6 +360,7 @@ header ul li a:hover {
     .contact-container .contact-info h1 {
         font-size: 100%;
     }
+
     .contact-container .contact-info p {
         font-size: 95%;
     }
