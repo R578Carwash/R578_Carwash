@@ -103,6 +103,10 @@ header ul li a:hover {
     margin-left: 50px;
 }
 
+.soon-lounge h1{
+    font-size: 550%; 
+}
+
 .cream-joint h1{
     font-size: 520%; 
 }
@@ -209,6 +213,10 @@ header ul li a:hover {
         max-height: 300px;
         margin-left: 5%;
         margin-top: 20%;
+    }
+
+    .soon-lounge h1{
+        font-size: 220%; 
     }
 
     .cream-joint h1{
@@ -331,6 +339,11 @@ header ul li a:hover {
         display: block;
     }
 
+    .soon-lounge h1{
+        font-size: 180%; 
+    }
+
+
     .cream-joint h1{
         font-size: 140%; 
     }
@@ -422,6 +435,30 @@ header ul li a:hover {
 
     .sidenav .closebtn {
         font-size: 28px;
+    }
+    .soon-lounge h1{
+        font-size: 140%; 
+    }
+
+
+    .cream-joint h1{
+        font-size: 120%; 
+    }
+
+    .cream-joint p{
+        font-size: 80%; 
+    }
+
+    .cream-joint .menu h2{
+        font-size: 50%; 
+    }
+
+    .cream-joint .menu h4{
+        font-size: 35%; 
+    }
+
+    .cream-joint .w3-container h3{
+        font-size: 60%; 
     }
 
     .events h1 {
