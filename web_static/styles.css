@@ -103,6 +103,12 @@ header ul li a:hover {
     margin-left: 50px;
 }
 
+.car-background p{
+    margin-top: 7.5%;
+    margin-left: 35%;
+    font-size: 220%; 
+}
+
 .ice_man_sub h1{
     font-size: 500%; 
 }
@@ -223,6 +229,14 @@ header ul li a:hover {
         margin-top: 20%;
     }
 
+    .car-background p{
+        margin-top: 12%;
+        margin-left: 10%;
+        font-size: 110%; 
+    }
+    .car-background p{
+        font-size: 120%; 
+    }
     .ice_man_sub h1{
         font-size: 450%; 
     }
@@ -359,6 +373,12 @@ header ul li a:hover {
         display: block;
     }
 
+    .car-background p{
+        margin-top: 12%;
+        margin-left: 5;
+        font-size: 90%; 
+    }
+
     .ice_man_sub h1{
         font-size: 400%; 
     }
@@ -468,10 +488,16 @@ header ul li a:hover {
     .sidenav .closebtn {
         font-size: 28px;
     }
+
+    .car-background p{
+        margin-top: 12%;
+        margin-left: 5;
+        font-size: 90%; 
+    }
+    
     .soon-lounge h1{
         font-size: 120%; 
     }
-
 
     .cream-joint h1{
         font-size: 130%; 
