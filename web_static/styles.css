@@ -396,7 +396,7 @@ header ul li a:hover {
     }
 
     .car-background .w3-container .w3-row-padding .w3-col img {
-        
+        width: auto;
         cursor: pointer;
         height: 60px;
     }
