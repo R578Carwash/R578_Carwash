@@ -408,7 +408,7 @@ header ul li a:hover {
     .car-background .w3-container .w3-row-padding .w3-col img {
         width: 100%;
         cursor: pointer;
-        height: 60px;
+        height: 100px;
     }
 
     .car-background .w3-container .w3-modal .w3-modal-content .w3-content .mySlides {
