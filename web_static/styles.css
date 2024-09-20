@@ -115,6 +115,11 @@ header ul li a:hover {
     height: 260px;
 }
 
+.car-background .w3-container .w3-modal .w3-modal-content .w3-content img {
+    width: 100%;
+    height: 400px;
+}
+
 .ice_man_sub h1 {
     font-size: 500%;
 }
@@ -246,6 +251,11 @@ header ul li a:hover {
         width: 100%;
         cursor: pointer;
         height: 160px;
+    }
+
+    .car-background .w3-container .w3-modal .w3-modal-content .w3-content img {
+        width: 100%;
+        height: 140px;
     }
 
     .car-background .w3-button {
@@ -399,6 +409,11 @@ header ul li a:hover {
         width: auto;
         cursor: pointer;
         height: 60px;
+    }
+
+    .car-background .w3-container .w3-modal .w3-modal-content .w3-content img {
+        width: 100%;
+        height: 90px;
     }
 
     .car-background .w3-button {
