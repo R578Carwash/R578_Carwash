@@ -412,6 +412,7 @@ header ul li a:hover {
     }
 
     .car-background .w3-container .w3-modal .w3-modal-content .w3-content .mySlides {
+        margin-top: 20px;
         width: 100%;
         height: 150px;
     }
