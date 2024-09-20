@@ -115,7 +115,7 @@ header ul li a:hover {
     height: 260px;
 }
 
-.car-background .w3-container .w3-modal .w3-modal-content .w3-content img {
+.car-background .w3-container .w3-modal .w3-modal-content .w3-content .mySlides {
     width: 100%;
     height: 400px;
 }
@@ -253,9 +253,9 @@ header ul li a:hover {
         height: 160px;
     }
 
-    .car-background .w3-container .w3-modal .w3-modal-content .w3-content img {
+    .car-background .w3-container .w3-modal .w3-modal-content .w3-content .mySlides {
         width: 100%;
-        height: 140px;
+        height: 160px;
     }
 
     .car-background .w3-button {
@@ -411,7 +411,7 @@ header ul li a:hover {
         height: 60px;
     }
 
-    .car-background .w3-container .w3-modal .w3-modal-content .w3-content img {
+    .car-background .w3-container .w3-modal .w3-modal-content .w3-content .mySlides {
         width: 100%;
         height: 90px;
     }
@@ -541,6 +541,11 @@ header ul li a:hover {
         width: auto;
         cursor: pointer;
         height: 40px;
+    }
+
+    .car-background .w3-container .w3-modal .w3-modal-content .w3-content .mySlides {
+        width: 100%;
+        height: 50px;
     }
 
     .car-background .w3-button {
