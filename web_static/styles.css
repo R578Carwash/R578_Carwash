@@ -103,34 +103,40 @@ header ul li a:hover {
     margin-left: 50px;
 }
 
-.car-background p{
+.car-background p {
     margin-top: 7.5%;
     margin-left: 35%;
-    font-size: 220%; 
+    font-size: 220%;
 }
 
-.ice_man_sub h1{
-    font-size: 500%; 
+.car-background .w3-container .w3-row-padding .w3-col img {
+    width: 100%;
+    cursor: pointer;
+    height: 260px;
 }
 
-.ice_man_sub h2{
-    font-size: 200%;  
+.ice_man_sub h1 {
+    font-size: 500%;
 }
 
-.soon-lounge h1{
-    font-size: 550%; 
+.ice_man_sub h2 {
+    font-size: 200%;
 }
 
-.cream-joint h1{
-    font-size: 520%; 
+.soon-lounge h1 {
+    font-size: 550%;
 }
 
-.cream-joint p{
-    font-size: 220%; 
+.cream-joint h1 {
+    font-size: 520%;
 }
 
-.cream-joint menu h2{
-    font-size: 180%; 
+.cream-joint p {
+    font-size: 220%;
+}
+
+.cream-joint menu h2 {
+    font-size: 180%;
 }
 
 .events h1 {
@@ -229,48 +235,58 @@ header ul li a:hover {
         margin-top: 20%;
     }
 
-    .car-background p{
-        margin-top: 12%;
+    .car-background p {
+        margin-top: 15%;
         margin-left: 10%;
-        font-size: 110%; 
-    }
-    .car-background p{
-        font-size: 120%; 
-    }
-    .ice_man_sub h1{
-        font-size: 450%; 
+        font-size: 110%;
     }
 
-    .ice_man_sub h2{
-        font-size: 150%;  
+
+    .car-background .w3-container .w3-row-padding .w3-col img {
+        width: 100%;
+        cursor: pointer;
+        height: 160px;
     }
 
-    .ice_man_sub .w3-container h3{
-        font-size: 100%; 
+    .car-background .w3-button {
+        margin-top: -10px;
+        font-size: 60%;
     }
 
-    .soon-lounge h1{
-        font-size: 220%; 
+    .ice_man_sub h1 {
+        font-size: 450%;
     }
 
-    .cream-joint h1{
-        font-size: 240%; 
+    .ice_man_sub h2 {
+        font-size: 150%;
     }
 
-    .cream-joint p{
-        font-size: 120%; 
+    .ice_man_sub .w3-container h3 {
+        font-size: 100%;
     }
 
-    .cream-joint .menu h2{
-        font-size: 90%; 
+    .soon-lounge h1 {
+        font-size: 220%;
     }
 
-    .cream-joint .menu h4{
-        font-size: 75%; 
+    .cream-joint h1 {
+        font-size: 240%;
     }
 
-    .cream-joint .w3-container h3{
-        font-size: 100%; 
+    .cream-joint p {
+        font-size: 120%;
+    }
+
+    .cream-joint .menu h2 {
+        font-size: 90%;
+    }
+
+    .cream-joint .menu h4 {
+        font-size: 75%;
+    }
+
+    .cream-joint .w3-container h3 {
+        font-size: 100%;
     }
 
     .events h1 {
@@ -373,47 +389,58 @@ header ul li a:hover {
         display: block;
     }
 
-    .car-background p{
+    .car-background p {
         margin-top: 19%;
         margin-left: 5;
-        font-size: 90%; 
+        font-size: 90%;
     }
 
-    .ice_man_sub h1{
-        font-size: 370%; 
+    .car-background .w3-container .w3-row-padding .w3-col img {
+        width: 100%;
+        cursor: pointer;
+        height: 100px;
     }
 
-    .ice_man_sub h2{
-        font-size: 170%;  
+    .car-background .w3-button {
+        margin-top: -10px;
+        font-size: 40%;
     }
 
-    .ice_man_sub .w3-container h3{
-        font-size: 80%; 
+    .ice_man_sub h1 {
+        font-size: 370%;
     }
 
-    .soon-lounge h1{
-        font-size: 180%; 
+    .ice_man_sub h2 {
+        font-size: 170%;
+    }
+
+    .ice_man_sub .w3-container h3 {
+        font-size: 80%;
+    }
+
+    .soon-lounge h1 {
+        font-size: 180%;
     }
 
 
-    .cream-joint h1{
-        font-size: 150%; 
+    .cream-joint h1 {
+        font-size: 150%;
     }
 
-    .cream-joint p{
-        font-size: 110%; 
+    .cream-joint p {
+        font-size: 110%;
     }
 
-    .cream-joint .menu h2{
-        font-size: 80%; 
+    .cream-joint .menu h2 {
+        font-size: 80%;
     }
 
-    .cream-joint .menu h4{
-        font-size: 65%; 
+    .cream-joint .menu h4 {
+        font-size: 65%;
     }
 
-    .cream-joint .w3-container h3{
-        font-size: 100%; 
+    .cream-joint .w3-container h3 {
+        font-size: 100%;
     }
 
     .events h1 {
@@ -489,34 +516,34 @@ header ul li a:hover {
         font-size: 28px;
     }
 
-    .car-background p{
+    .car-background p {
         margin-top: 12%;
         margin-left: 5;
-        font-size: 90%; 
+        font-size: 90%;
     }
 
-    .soon-lounge h1{
-        font-size: 120%; 
+    .soon-lounge h1 {
+        font-size: 120%;
     }
 
-    .cream-joint h1{
-        font-size: 130%; 
+    .cream-joint h1 {
+        font-size: 130%;
     }
 
-    .cream-joint p{
-        font-size: 90%; 
+    .cream-joint p {
+        font-size: 90%;
     }
 
-    .cream-joint .menu h2{
-        font-size: 50%; 
+    .cream-joint .menu h2 {
+        font-size: 50%;
     }
 
-    .cream-joint .menu h4{
-        font-size: 45%; 
+    .cream-joint .menu h4 {
+        font-size: 45%;
     }
 
-    .cream-joint .w3-container h3{
-        font-size: 100%; 
+    .cream-joint .w3-container h3 {
+        font-size: 100%;
     }
 
     .events h1 {
